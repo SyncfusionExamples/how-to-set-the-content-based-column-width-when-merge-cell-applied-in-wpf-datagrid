@@ -1,0 +1,25 @@
+﻿<Window x:Class="SfDataGridDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SfDataGridDemo"
+        xmlns:Syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400" >
+    <Grid>
+       <Syncfusion:SfDataGrid x:Name="dataGrid" 
+                              ItemsSource="{Binding MainVms}"
+                              ColumnSizer="SizeToCells"
+                              QueryCoveredRange="SfDataGrid_OnQueryCoveredRange"
+                              SelectionMode="Extended"
+                              SelectionUnit="Cell" 
+                              HeaderRowHeight="0" >
+          <Syncfusion:SfDataGrid.Columns>
+                <Syncfusion:GridTextColumn x:Name="Col1" MappingName="Value1"/>
+                <Syncfusion:GridTextColumn x:Name="Col2" MappingName="Value2" />
+                <Syncfusion:GridTextColumn x:Name="Col3" MappingName="Value3" />
+          </Syncfusion:SfDataGrid.Columns>
+       </Syncfusion:SfDataGrid>
+    </Grid>
+</Window>
