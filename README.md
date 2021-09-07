@@ -55,5 +55,7 @@ private void SfDataGrid_OnQueryCoveredRange(object sender, GridQueryCoveredRange
 
 Take a moment to peruse the [WPF DataGrid – AutoSize Columns](https://help.syncfusion.com/wpf/datagrid/autosize-columns), where you can find about autosize columns with code examples.
 
+KB article - [How to set the content based column width when merge cell applied in WPF DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/12540/how-to-set-the-content-based-column-width-when-merge-cell-applied-in-wpf-datagrid)
+
 ## Requirements to run the demo
 Visual Studio 2015 and above versions
